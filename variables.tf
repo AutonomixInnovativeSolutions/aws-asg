@@ -44,3 +44,7 @@ variable "key_name" {
 variable "desired_capacity" {
   
 }
+
+variable "encrypted" {
+  
+}
