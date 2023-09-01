@@ -7,7 +7,7 @@ resource "aws_launch_configuration" "launch_conf" {
   security_groups = var.lc_security_groups
   user_data = var.user_data
   key_name= var.key_name
-  
+  associate_public_ip_address = var.public_ip
   root_block_device {
     volume_size = var.root_volume_size
     delete_on_termination = true
