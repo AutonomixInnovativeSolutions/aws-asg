@@ -25,10 +25,7 @@ resource "aws_autoscaling_group" "asg" {
   min_size             = var.min_size
   max_size             = var.max_size
   desired_capacity = var.desired_capacity
-vpc_zone_identifier = var.vpc_zone_identifier
-  lifecycle {
-    create_before_destroy = true
-  }
+  vpc_zone_identifier = var.vpc_zone_identifier
 
   tag {
     key = "Name"
