@@ -11,6 +11,7 @@ resource "aws_launch_configuration" "launch_conf" {
   root_block_device {
     volume_size = var.root_volume_size
     delete_on_termination = true
+    encrypted = var.encrypted
   }
   lifecycle {
     create_before_destroy = true
