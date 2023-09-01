@@ -48,3 +48,6 @@ variable "desired_capacity" {
 variable "encrypted" {
   
 }
+variable "public_ip" {
+  
+}
