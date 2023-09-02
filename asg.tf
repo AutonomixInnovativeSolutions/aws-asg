@@ -26,6 +26,7 @@ resource "aws_autoscaling_group" "asg" {
   max_size             = var.max_size
   desired_capacity = var.desired_capacity
   vpc_zone_identifier = var.vpc_zone_identifier
+  protect_from_scale_in = var.protect_from_scale_in
 
   tag {
     key = "Name"
