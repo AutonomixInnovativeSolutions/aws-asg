@@ -51,3 +51,6 @@ variable "encrypted" {
 variable "public_ip" {
   
 }
+
+variable "protect_from_scale_in" {
+}
